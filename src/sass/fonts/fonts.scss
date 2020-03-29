@@ -10,6 +10,16 @@
 
 @font-face {
   font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.eot?#iefix') format('embedded-opentype'), 
+       url('/fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.woff') format('woff'), 
+       url('/fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.ttf')  format('truetype'), 
+       url('/fonts/Gilroy-RegularItalic/Gilroy-RegularItalic.svg#Gilroy-RegularItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gilroy';
   src: url('/fonts/Gilroy-Regular/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),  url('/fonts/Gilroy-Regular/Gilroy-Regular.woff') format('woff'), url('/fonts/Gilroy-Regular/Gilroy-Regular.ttf')  format('truetype'), url('/fonts/Gilroy-Regular/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
   font-weight: 400;
   font-style: normal;

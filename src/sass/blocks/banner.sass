@@ -1,0 +1,90 @@
+.banner
+    background-repeat: no-repeat
+    background-position: 50% 50% 
+    background-size: cover
+    background-image: url(../img/banner-bg.jpg)
+    padding-top: 25px
+    position: relative
+    &__title
+        color: $blue
+        font-size: 48px
+        font-weight: 600
+        line-height: 42px
+        padding-bottom: 32px
+        &-block
+            max-width: 325px
+        &-subtitle
+            text-align: right
+            color: $green
+            text-transform: uppercase
+            font-size: 24px
+            line-height: 26px
+            font-weight: 700
+            letter-spacing: 0.2em
+            padding-bottom: 10px
+    &__text
+        max-width: 475px
+        font-size: 16px
+    &__lawyer
+        text-align: right
+        padding-right: 10px
+    &__name
+        font-size: 19px
+        font-weight: 500
+    &__position
+        font-style: italic
+        color: #2f2f2f
+        font-size: 16px
+        padding-bottom: 8px
+    &__form
+        width: 100%
+        display: flex
+        &-block
+            padding: 35px 30px
+            border-radius: 12px
+            background-color: $green
+        &-title
+            font-size: 30px
+            font-weight: 500
+            color: #ffffff
+            line-height: 26px
+            padding-bottom: 16px
+        .banner__form-input
+            color: #ffffff
+            border-radius: 7px 0 0 7px
+            width: 65%
+            padding: 16px 20px
+            &::placeholder
+                color: #daf0d0
+        .banner__form-submit
+            width: 35%
+            border-radius: 0 7px 7px 0
+    &__person
+        background-repeat: no-repeat
+        background-position: 50% 50% 
+        background-size: cover
+        background-image: url(../img/lawyer.png)
+        position: absolute
+        height: 518px
+        width: 311px
+        left: 55%
+        bottom: -45px
+    &__statistics
+        text-align: right
+        max-width: 220px
+        padding-top: 5px
+        color: $darkGray
+        &-questions
+            text-align: center
+            padding-bottom: 20px
+        &-subtitle
+            font-weight: 800
+            font-size: 18px
+            line-height: 1.2
+            &--wide
+                letter-spacing: 0.2em
+                font-size: 22px
+        &-quantity
+            font-size: 48px
+            color: $blue
+            line-height: 52px
