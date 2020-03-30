@@ -1,0 +1,43 @@
+.category
+    color: $gray
+    padding-top: 50px
+    .h2
+        padding-bottom: 12px
+    &__inner
+        display: flex
+        align-items: flex-start
+    &__left
+        width: 50%
+        margin-right: 40px
+    &__right
+        width: 50%
+        margin-right: 5px
+    &__item
+        margin-bottom: 28px
+    &__top
+        display: flex
+        align-items: center
+    &__pic
+        margin-right: 10px
+    &__title
+        font-weight: 500
+        font-size: 22px
+        padding-right: 10px
+        white-space: nowrap
+    &__num
+        font-weight: 700
+        color: #ffffff
+        position: relative
+        align-self: flex-start
+        padding-left: 3%
+        top: -8px
+        z-index: 2
+        &::before
+            content: ''
+            position: absolute
+            background: url(../img/message-green.png) no-repeat 50% 50% / contain
+            width: 40px
+            height: 34px
+            left: 0
+            top: -3px
+            z-index: -1
