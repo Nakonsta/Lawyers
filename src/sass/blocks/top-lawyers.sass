@@ -1,0 +1,72 @@
+.top-lawyer
+    padding-bottom: 25px
+    & + .top-lawyer
+        padding-top: 5px
+    &__block
+        .h3
+            padding: 12px 0 20px
+        .btn
+            padding-left: 26px
+            padding-right: 26px
+    &__info
+        display: flex
+        align-items: flex-start
+        padding-bottom: 12px
+    &__pic
+        border-radius: 50%
+        width: 50px
+        height: 50px
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        background-size: cover
+        margin-right: 10px
+        &-1
+            background-image: url(../img/lawyer-1.png)
+        &-2
+            background-image: url(../img/lawyer-2.png)
+        &-3
+            background-image: url(../img/lawyer-3.png)
+    &__name
+        font-size: 16px
+        font-weight: 500
+        line-height: 1.2
+    &__answers
+        display: flex
+        align-items: flex-end
+        line-height: 1.2
+        &-text
+            text-transform: uppercase
+            font-size: 11px
+            font-weight: 700
+            margin-right: 7px
+        &-num, &-common
+            font-size: 14px
+            font-weight: 700
+    &__actions
+        display: flex
+    &__action
+        display: block
+        font-weight: 500
+        font-size: 14px
+        line-height: 1
+        position: relative
+        width: 50%
+        margin-right: 15px
+        &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+    &__question
+        padding-left: 32px
+        &::before
+            background: url(../img/message-big.png) no-repeat 50% 50% / contain
+            width: 21px
+            height: 18px
+    &__document
+        padding-left: 24px
+        &::before
+            background: url(../img/document-small.png) no-repeat 50% 50% / contain
+            width: 16px
+            height: 18px
