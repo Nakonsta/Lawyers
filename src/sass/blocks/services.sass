@@ -1,0 +1,45 @@
+.services
+    padding: 45px 0 50px
+    background-color: #f3f3f3
+    color: $gray
+    .row
+        align-items: center
+    &__title
+        font-weight: 300
+        font-size: 42px
+        line-height: 1
+    &__items
+        display: flex
+        align-items: center
+        justify-content: center
+    &__item
+        & + .services__item
+            margin-left: 110px
+        &-pic
+            border-radius: 50%
+            width: 180px
+            height: 180px
+            background-repeat: no-repeat
+            background-position: 50% 50%
+            background-size: cover
+            position: relative
+            margin-bottom: 25px
+            &-1
+                background-image: url(../img/services-1.png)
+            &-2
+                background-image: url(../img/services-2.png)
+            &-3
+                background-image: url(../img/services-3.png)
+        &-link
+            position: absolute
+            top: 50%
+            right: 0
+            transform: translate(50%, -50%)
+            background: $green url(../img/arrow-right.png) no-repeat 50% 50% / 12px 9px
+            width: 32px
+            height: 32px
+            border-radius: 50%
+        &-title
+            font-size: 24px
+            line-height: 26px
+            min-width: 205px
