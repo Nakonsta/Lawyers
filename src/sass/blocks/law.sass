@@ -1,0 +1,60 @@
+.law
+    .h1
+        margin: 8px 0 24px
+    .question
+        padding: 10px 25px 25px
+        margin-bottom: 8px
+        &__top
+            margin-bottom: 5px
+            &-left
+                display: flex
+                align-items: center
+        &__text
+            height: auto
+            min-height: 0
+        &__date
+            padding-right: 24px
+            padding-top: 8px
+        &__lawyer
+            padding-right: 24px
+            padding-top: 8px
+            &::before
+                top: 8px
+        &__answer
+            padding-bottom: 5px
+    &__popular
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        padding-bottom: 50px
+        &-item
+            display: inline-block
+            margin-bottom: 8px
+            position: relative
+            text-decoration: underline
+            padding: 0 0 0 30px
+            width: 50%
+            &::after
+                content: ''
+                position: absolute
+                background-color: $green
+                border-radius: 50%
+                width: 20px
+                height: 20px
+                left: 2px
+                top: 2px
+            &::before
+                content: ''
+                position: absolute
+                background: url(../img/arrow-right-small.png) no-repeat 50% 50% / contain
+                width: 4px
+                height: 7px
+                top: 9px
+                left: 11px
+                z-index: 1
+        &-topics
+            margin-top: 24px
+    &__questions
+        &-title
+            font-size: 36px
+            margin-bottom: 20px

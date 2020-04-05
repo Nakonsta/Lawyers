@@ -76,22 +76,49 @@
             display: none
     &--small
         padding-top: 165px
+        @media (max-width: 575px)
+            padding-top: 40px
         .banner__title-small
             font-size: 36px
             font-weight: 500
             padding-bottom: 15px
+            @media (max-width: 991px)
+                font-size: 28px
+                max-width: 360px
+            @media (max-width: 767px)
+                padding-bottom: 60px
+                @media (max-width: 575px)
+                    padding-bottom: 24px
         .banner__person--small
             bottom: auto
             top: -35px
             background-size: contain
             left: 54%
+            @media (max-width: 991px)
+                top: 0
+                left: 40%
+            @media (max-width: 767px)
+                left: auto
+                right: 0
         .banner__lawyer
             text-align: left
             margin-left: 80px
             padding-bottom: 16px
+            @media (max-width: 767px)
+                margin-left: 0
             &-wrapper
                 display: flex
                 align-items: flex-end
+                @media (max-width: 991px)
+                    position: absolute
+                    right: 20px
+                    max-width: 300px
+                    padding-bottom: 0
+                @media (max-width: 767px)
+                    right: auto
+                    bottom: 145px
+                    left: 0
+                    text-align: left
 
 
 

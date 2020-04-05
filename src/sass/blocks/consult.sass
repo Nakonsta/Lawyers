@@ -4,6 +4,9 @@
         font-size: 36px
         line-height: 42px
         margin-bottom: 24px
+        @media (max-width: 575px)
+            font-size: 28px
+            line-height: 32px
     &__question
         &-text
             font-size: 16px
@@ -47,15 +50,25 @@
         &-person
             display: flex
             align-items: center
+            @media (max-width: 767px)
+                width: 100%
+                margin-bottom: 12px
         &-lawyer
             display: flex
             justify-content: space-between
             align-items: center
             padding-bottom: 16px
+            @media (max-width: 767px)
+                flex-wrap: wrap
         &-activity
             display: flex
             align-items: center
+            @media (max-width: 767px)
+                width: 100%
+            @media (max-width: 575px)
+                flex-wrap: wrap
         &-pic
+            flex-shrink: 0
             width: 58px
             height: 58px
             border-radius: 50%
@@ -76,6 +89,10 @@
             &-block
                 margin-right: 50px
                 text-align: center
+                @media (max-width: 575px)
+                    width: 50%
+                    margin-right: 0
+                    margin-bottom: 12px
             &-num
                 color: $green
                 font-weight: 500
@@ -97,6 +114,8 @@
                 left: 16px
                 top: 50%
                 transform: translateY(-50%)
+            @media (max-width: 575px)
+                width: 100%
         &-text
             line-height: 24px
             margin: 0 0 16px
