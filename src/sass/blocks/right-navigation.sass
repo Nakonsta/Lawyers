@@ -1,0 +1,35 @@
+.right-nav
+    padding: 60px 0 12px
+    &__block
+        margin-bottom: 12px
+    &__title
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 12px
+    &__subtitle
+        margin-bottom: 12px
+        font-size: 17px
+    &__link
+        display: inline-block
+        margin-bottom: 8px
+        position: relative
+        text-decoration: underline
+        padding: 0 0 0 30px
+        &::after
+            content: ''
+            position: absolute
+            background-color: $green
+            border-radius: 50%
+            width: 20px
+            height: 20px
+            left: 2px
+            top: 2px
+        &::before
+            content: ''
+            position: absolute
+            background: url(../img/arrow-right-small.png) no-repeat 50% 50% / contain
+            width: 4px
+            height: 7px
+            top: 9px
+            left: 11px
+            z-index: 1

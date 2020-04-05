@@ -5,7 +5,13 @@
         display: flex
         justify-content: space-between
         align-items: center
+    &__logo
+        &-mobile
+            padding-bottom: 16px
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5)
     &__nav
+        @media (max-width: 1199px)
+            display: none
         &-link
             display: inline-block
             color: #ffffff
@@ -15,7 +21,62 @@
             font-size: 16px
             &:hover, &:focus
                 color: $lightGray
+        &--mobile
+            display: none
+            padding: 16px 0
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5)
+            @media (max-width: 1199px)
+                display: block
     &__buttons
         white-space: nowrap
+        @media (max-width: 1199px)
+            display: none
+        &--mobile
+            padding-top: 16px
+            display: none
+            @media (max-width: 1199px)
+                display: block
     &__lk
         margin-right: 8px
+    &__burger
+        display: none
+        @media (max-width: 1199px)
+            display: block
+        &-link:hover .header__burger-pic,
+        &-link:focus .header__burger-pic
+            transform: scale(1.1)
+        &-pic
+            width: 40px
+            height: 40px
+
+    .mobile-menu
+        display: none
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background-color: $green
+        min-height: 100vh
+        z-index: 5
+        padding: 40px 0
+        &--open
+            @media (max-width: 1199px)
+                display: block
+        .header
+            &__nav
+                &-link
+                    display: block
+                    margin: 5px 0
+        &__close
+            position: absolute
+            top: 24px
+            right: 24px
+            transition: all .5s ease-in
+            &-pic
+                width: 24px
+                height: 24px
+            &:hover .mobile-menu__close-pic,
+            &:focus .mobile-menu__close-pic
+                transform: scale(1.1)
+

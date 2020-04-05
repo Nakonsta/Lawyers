@@ -1,0 +1,14 @@
+.breadcrumbs
+    padding-top: 35px
+    font-size: 16px   
+    &__link
+        position: relative
+        padding-right: 16px
+        display: inline-block
+        &::after
+            content: '/'
+            position: absolute
+            right: 0
+        &:last-child::after
+            content: ''
+        

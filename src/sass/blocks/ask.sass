@@ -2,10 +2,14 @@
     &__form
         width: 100%
         display: flex
+        @media (max-width: 575px)
+            flex-direction: column
         &-block
             padding: 35px 30px
             border-radius: 12px
             background-color: $green
+            z-index: 4
+            position: relative
         &-title
             font-size: 30px
             font-weight: 500
@@ -19,11 +23,23 @@
             padding: 16px 20px
             &::placeholder
                 color: #daf0d0
+            @media (max-width: 575px)
+                width: 100%
+                border-radius: 7px
+                margin-bottom: 5px
         .ask__form-submit
             width: 35%
             border-radius: 0 7px 7px 0
+            white-space: normal
+            @media (max-width: 575px)
+                width: 100%
+                border-radius: 7px
     &__section
         padding-top: 90px
+        @media (max-width: 991px)
+            padding-top: 40px
+        @media (max-width: 575px)
+            padding-top: 24px
         .h2
             font-size: 36px
             padding-bottom: 20px
@@ -32,7 +48,16 @@
                 padding: 30px 40px
         .ask__form-input
             width: 80%
+            @media (max-width: 991px)
+                width: 65%
+            @media (max-width: 575px)
+                width: 100%
+                margin-bottom: 5px
         .ask__form-submit
             width: 20%
             font-size: 18px
             font-weight: 600
+            @media (max-width: 991px)
+                width: 35%
+            @media (max-width: 575px)
+                width: 100%

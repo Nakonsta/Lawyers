@@ -1,0 +1,121 @@
+.consult
+    .h1
+        margin-top: 16px
+        font-size: 36px
+        line-height: 42px
+        margin-bottom: 24px
+    &__question
+        &-text
+            font-size: 16px
+            line-height: 26px
+        &-info
+            padding: 20px 0 55px
+            display: flex
+            align-items: center
+        &-subtitle
+            margin-bottom: 12px
+            display: flex
+            align-items: center
+        &-num
+            padding-left: 60px
+            position: relative
+            font-size: 20px
+            font-weight: 500
+            &::before
+                content: ''
+                position: absolute
+                width: 35px
+                height: 35px
+                left: 16px
+                top: 50%
+                transform: translateY(-50%)
+                background-color: $green
+                border-radius: 50%
+            &:after
+                content: ''
+                position: absolute
+                background: url(../img/message-shadow.png) no-repeat 50% 50% / contain
+                width: 15px
+                height: 13px
+                top: 9px
+                left: 26px
+        &-answer
+            border-radius: 15px
+            border: 1px solid #d9d9d9
+            padding: 15px 25px 24px
+            margin-bottom: 10px
+        &-person
+            display: flex
+            align-items: center
+        &-lawyer
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 16px
+        &-activity
+            display: flex
+            align-items: center
+        &-pic
+            width: 58px
+            height: 58px
+            border-radius: 50%
+            background-repeat: no-repeat
+            background-position: 50% 50%
+            background-size: cover
+            margin-right: 12px
+            &-1
+                background-image: url(../img/lawyer-5.png)
+            &-2
+                background-image: url(../img/lawyer-4.png)
+        &-name
+            font-size: 16px
+            font-weight: 500
+        &-position
+            font-size: 14px
+        &-activity
+            &-block
+                margin-right: 50px
+                text-align: center
+            &-num
+                color: $green
+                font-weight: 500
+                font-size: 24px
+                line-height: 1.2
+            &-text
+                text-transform: uppercase
+                font-weight: 700
+                font-size: 11px
+        &-ask
+            position: relative
+            padding-left: 50px !important
+            &::before
+                content: ''
+                position: absolute
+                background: url(../img/message.png) no-repeat 50% 50% / contain
+                width: 17px
+                height: 14px
+                left: 16px
+                top: 50%
+                transform: translateY(-50%)
+        &-text
+            line-height: 24px
+            margin: 0 0 16px
+        &-quote
+            background-color: #f1f5f8
+            padding: 16px 24px
+            margin-bottom: 24px
+            &-pic
+                position: relative
+                padding-left: 60px
+                padding-bottom: 24px
+                &::before
+                    content: ''
+                    position: absolute
+                    background: url(../img/quote.png) no-repeat 50% 50% / contain
+                    width: 35px
+                    height: 34px
+                    top: 0
+                    left: 16px
+    .question__date
+        margin-right: 20px
+        color: #636363

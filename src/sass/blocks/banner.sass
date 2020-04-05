@@ -13,6 +13,8 @@
         font-weight: 600
         line-height: 42px
         padding-bottom: 32px
+        @media (max-width: 575px)
+            font-size: 40px
         &-block
             max-width: 325px
         &-subtitle
@@ -27,9 +29,20 @@
     &__text
         max-width: 475px
         font-size: 16px
+        @media (max-width: 991px)
+            max-width: 375px
+        @media (max-width: 767px)
+            max-width: 320px
+        @media (max-width: 575px)
+            padding-bottom: 24px
     &__lawyer
         text-align: right
         padding-right: 10px
+        @media (max-width: 767px)
+            text-align: left
+            padding-top: 16px
+        @media (max-width: 575px)
+            display: none
     &__name
         font-size: 19px
         font-weight: 500
@@ -48,4 +61,38 @@
         width: 311px
         left: 55%
         bottom: -45px
+        z-index: 2
+        @media (max-width: 991px)
+            bottom: auto
+            top: 0px
+            left: 49%
+            width: 234px
+            height: 389px
+        @media (max-width: 767px)
+            left: auto
+            right: 0
+            top: 40px
+        @media (max-width: 575px)
+            display: none
+    &--small
+        padding-top: 165px
+        .banner__title-small
+            font-size: 36px
+            font-weight: 500
+            padding-bottom: 15px
+        .banner__person--small
+            bottom: auto
+            top: -35px
+            background-size: contain
+            left: 54%
+        .banner__lawyer
+            text-align: left
+            margin-left: 80px
+            padding-bottom: 16px
+            &-wrapper
+                display: flex
+                align-items: flex-end
+
+
+
             
