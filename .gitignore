@@ -12,6 +12,3 @@ Thumbs.db
 *.log*
 node_modules/
 layouts/
-
-# Папка с собранными файлами проекта
-dist/
