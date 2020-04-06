@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/css/style.min.css">
+    <title>Юрист Онлайн – ЛК клиента</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="./src/img/logo.png" alt="Логотип Юрист Онлайн">
+                    </div>
+                    <nav class="header__nav">
+                        <a href="#" class="header__nav-link">Задать вопрос</a>
+                        <a href="#" class="header__nav-link">Заказать документ</a>
+                        <a href="#" class="header__nav-link">Вопросы</a>
+                        <a href="#" class="header__nav-link">Наши юристы</a>
+                        <a href="#" class="header__nav-link">Как это работает</a>
+                    </nav>
+                    <div class="header__buttons">
+                        <a href="#" class="btn btn--transparent header__lk">Вход</a>
+                        <a href="#" class="btn btn--white header__registration">Регистрация</a>
+                    </div>
+                    <div class="header__burger">
+                        <a href="#" class="header__burger-link">
+                            <img class="header__burger-pic" src="./src/img/menu.png" alt="Мобильное меню Юрист Онлайн">
+                        </a>
+                    </div>
+                    <div class="mobile-menu">
+                        <div class="container">
+                            <div class="mobile-menu__inner">
+                                <div class="header__logo header__logo-mobile">
+                                    <img src="./src/img/logo.png" alt="Логотип Юрист Онлайн">
+                                </div>
+                                <nav class="header__nav header__nav--mobile">
+                                    <a href="#" class="header__nav-link">Задать вопрос</a>
+                                    <a href="#" class="header__nav-link">Заказать документ</a>
+                                    <a href="#" class="header__nav-link">Вопросы</a>
+                                    <a href="#" class="header__nav-link">Наши юристы</a>
+                                    <a href="#" class="header__nav-link">Как это работает</a>
+                                </nav>
+                                <div class="header__buttons header__buttons--mobile">
+                                    <a href="#" class="header__nav-link header__lk">Вход</a>
+                                    <a href="#" class="header__nav-link header__registration">Регистрация</a>
+                                </div>
+                                <a href="#" class="mobile-menu__close">
+                                    <img class="mobile-menu__close-pic" src="./src/img/close.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </header>
+        <main class="content">
+            <section class="lk">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <a href="#" class="breadcrumbs__link">Категории</a>
+                        <a class="breadcrumbs__link">Личный кабинет</a>
+                    </div>
+                    <h1 class="h1">Личный кабинет</h1>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="lk__info">
+                                <div class="lk__info-person">
+                                    <div class="lk__info-pic"></div>
+                                    <div class="lk__info-about">
+                                        <div class="lk__info-name">Петров Михаил Игоревич</div>
+                                        <div class="lk__info-balance">
+                                            Баланс:
+                                            <span class="lk__info-balance-sum">150.00</span>
+                                        </div>
+                                        <a href="#" class="lk__info-pay btn btn--white">Пополнить</a>
+                                    </div>
+                                </div>
+                                <nav class="lk__nav">
+                                    <div class="lk__nav-item">
+                                        <a href="#" class="lk__nav-link">Профиль</a>
+                                    </div>
+                                    <div class="lk__nav-item">
+                                        <a href="#" class="lk__nav-link">Закладки</a>
+                                    </div>
+                                    <div class="lk__nav-item">
+                                        <a href="#" class="lk__nav-link">Мои вопросы</a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 law">
+                            <h2 class="h2">Вопросы юристу</h2>
+                            <div class="lk__tabs">
+                                <div class="lk__tab-item lk__tab-item--active" data-tab="tab__new">
+                                    <a href="#" class="lk__tab-link">Новые</a>
+                                </div>
+                                <div class="lk__tab-item" data-tab="tab__free">
+                                    <a href="#" class="lk__tab-link">Бесплатные</a>
+                                </div>
+                                <div class="lk__tab-item" data-tab="tab__paid">
+                                    <a href="#" class="lk__tab-link">Платные</a>
+                                </div>
+                                <div class="lk__tab-item" data-tab="tab__complicated">
+                                    <a href="#" class="lk__tab-link">Сложные</a>
+                                </div>
+                                <div class="lk__tab-item" data-tab="tab__urgent">
+                                    <a href="#" class="lk__tab-link">Срочные</a>
+                                </div>
+                            </div>
+                            <div class="law__questions law__questions--active" data-tab="tab__new">
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как быть, если наш арендодатель требует вернуть деньги?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно подписать договор с заказчиком, если ИП оформлено не на меня?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/business-and-finance.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Будет ли договор иметь юридическую силу, если он не был подписан лично?
+                                    </a>
+                                    <div class="question__description">
+                                        В агентском договоре между партнёром Яндекс.Такси и водителем есть пункт, что предоставляя свои документы для подключения к системе по телефону, через Viber, WhatsApp, вы автоматически соглашаетесь с агентском договорм и он считается подписанный....
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Можно ли в судебном порядке оспорить договор аренды?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно решить спор с заказчиком по выполненным работам согласно договору?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/business-and-finance.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Будет ли договор иметь юридическую силу, если он не был подписан лично?
+                                    </a>
+                                    <div class="question__description">
+                                        В агентском договоре между партнёром Яндекс.Такси и водителем есть пункт, что предоставляя свои документы для подключения к системе по телефону, через Viber, WhatsApp, вы автоматически соглашаетесь с агентском договорм и он считается подписанный....
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="law__questions" data-tab="tab__free">
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно подписать договор с заказчиком, если ИП оформлено не на меня?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как быть, если наш арендодатель требует вернуть деньги?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="law__questions" data-tab="tab__paid">
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как быть, если наш арендодатель требует вернуть деньги?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно подписать договор с заказчиком, если ИП оформлено не на меня?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="law__questions" data-tab="tab__complicated">
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно подписать договор с заказчиком, если ИП оформлено не на меня?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как быть, если наш арендодатель требует вернуть деньги?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно подписать договор с заказчиком, если ИП оформлено не на меня?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/business-and-finance.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Будет ли договор иметь юридическую силу, если он не был подписан лично?
+                                    </a>
+                                    <div class="question__description">
+                                        В агентском договоре между партнёром Яндекс.Такси и водителем есть пункт, что предоставляя свои документы для подключения к системе по телефону, через Viber, WhatsApp, вы автоматически соглашаетесь с агентском договорм и он считается подписанный....
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Можно ли в судебном порядке оспорить договор аренды?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/document.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как можно решить спор с заказчиком по выполненным работам согласно договору?
+                                    </a>
+                                    <div class="question__description">
+                                        Ип оформлено не на меня, как кроме доверенности на третье лицо, можно подписать договор с заказчиком?
+                                    </div>
+                                </div>
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/business-and-finance.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Будет ли договор иметь юридическую силу, если он не был подписан лично?
+                                    </a>
+                                    <div class="question__description">
+                                        В агентском договоре между партнёром Яндекс.Такси и водителем есть пункт, что предоставляя свои документы для подключения к системе по телефону, через Viber, WhatsApp, вы автоматически соглашаетесь с агентском договорм и он считается подписанный....
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="law__questions" data-tab="tab__urgent">
+                                <div class="question">
+                                    <div class="question__top">
+                                        <div class="question__top-left">
+                                            <div class="question__date">
+                                                <div class="question__day">Сегодня</div>
+                                                <div class="question__time">20:16</div>
+                                            </div>
+                                            <div class="question__lawyer">
+                                                Анатолий Владимирович
+                                            </div>
+                                            <div class="question__answer">
+                                                <div class="question__answer-text">Ответов: </div>
+                                                <div class="question__answer-num">20</div>
+                                            </div>
+                                        </div>
+                                        <div class="question__topic">
+                                            <img src="./src/img/case.png" alt="Вопрос юристу онлайн">
+                                        </div>
+                                    </div>
+                                    <a href="#" class="question__text">
+                                        Как быть, если наш арендодатель требует вернуть деньги?
+                                    </a>
+                                    <div class="question__description">
+                                        Здравствуйте! Предисловие: я брал автомобиль в аренду у частника для работы в такси. Никаких подписей я своих не ставил, все было на доверии. Оплата была посуточная. По истечению некоторого времени, автомобиль начал нуждаться в ремонте и замене...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pagination">
+                                <div class="pagination__inner">
+                                    <a href="#" class="pagination__item pagination__item-prev pagination__item--hidden">Предыдущая</a>
+                                    <a href="#" class="pagination__item pagination__page pagination__item--current">1</a>
+                                    <a href="#" class="pagination__item pagination__page">2</a>
+                                    <a href="#" class="pagination__item pagination__page">3</a>
+                                    <a href="#" class="pagination__item pagination__item-dots">...</a>
+                                    <a href="#" class="pagination__item pagination__page">15</a>
+                                    <a href="#" class="pagination__item pagination__item-next">Следующая</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__soc">
+                    
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./dist/js/vendor.min.js"></script>
+    <script src="./dist/js/main.min.js"></script>
+</body>
+</html>

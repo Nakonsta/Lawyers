@@ -1,0 +1,105 @@
+.lk   
+    .h1
+        margin: 8px 0 30px
+        @media(max-width: 991px)
+            margin-bottom: 16px
+        @media(max-width: 767px)
+            font-size: 28px
+            margin-bottom: 12px
+    .law__questions
+        padding: 0 0 16px
+        display: none
+        &--active
+            display: block
+    &__info
+        @media(max-width: 991px)
+            margin-bottom: 24px
+        &-person
+            background-color: $green
+            border-radius: 15px 15px 0 0
+            padding: 27px 22px 
+            color: #ffffff
+            display: flex
+            align-items: flex-start
+            @media(max-width: 1199px)
+                flex-direction: column
+                align-items: center
+                text-align: center
+        &-pic
+            flex-shrink: 0
+            width: 60px
+            height: 60px
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: 50% 50%
+            background-image: url(../img/person.png)
+            @media(max-width: 1199px)
+                margin-bottom: 16px
+        &-about
+            margin-left: 16px
+            @media(max-width: 1199px)
+                margin-left: 0
+        &-name
+            font-size: 16px
+            line-height: 20px
+            font-weight: 500
+            padding-bottom: 5px
+        &-balance
+            text-transform: uppercase
+            font-size: 12px
+            font-weight: 700
+            margin-bottom: 12px
+            &-sum
+                font-size: 20px
+                font-weight: 400
+        &-pay
+            color: #ffffff
+            background-color: transparent
+    &__nav
+        border: 1px solid #d9d9d9
+        border-radius: 0 0 15px 15px
+        padding: 27px 22px 
+        &-item
+            width: 100%
+            margin-bottom: 18px
+            display: inline-block
+            text-align: center
+            &:last-child
+                margin-bottom: 0
+        &-link
+            font-size: 13px
+            font-weight: 700          
+            text-transform: uppercase
+    &-lawyer
+        border: 1px solid #d9d9d9
+        border-radius: 0 0 15px 15px
+        padding: 40px 22px 12px
+        text-align: center
+        @media(max-width: 991px)
+            display: flex
+            justify-content: space-around
+            align-items: flex-start
+        @media(max-width: 991px)
+            flex-direction: column
+            align-items: center
+        &__block
+            padding-bottom: 24px
+            &:last-child
+                padding-bottom: 0
+        &__items
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__title
+            text-transform: uppercase
+            font-size: 13px
+            font-weight: 700
+            padding-bottom: 12px
+        &__link
+            display: inline-block
+            font-weight: 500
+            margin-bottom: 8px
+            border-bottom: 1px solid transparent
+            &--active
+                border-bottom-color: $green
+

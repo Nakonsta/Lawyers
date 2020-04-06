@@ -1,0 +1,42 @@
+.pagination
+    display: flex
+    justify-content: flex-end
+    @media(max-width: 575px)
+        justify-content: center
+        flex-wrap: wrap
+    &__inner
+        display: flex
+        align-items: center
+    &__item
+        font-size: 18px
+        font-weight: 500
+        margin-right: 16px
+        display: inline-block
+        &:last-child
+            margin-right: 0
+        &--hidden
+            display: none
+        &--current
+            color: $green
+        &-prev, &-next
+            font-size: 15px
+            position: relative
+            @media(max-width: 575px)
+                font-size: 0
+            &::before
+                content: ''
+                position: absolute
+                background: url(../img/arrow.png) no-repeat 50% 50% / contain
+                width: 14px
+                height: 10px
+                top: 50%
+                transform: translateY(-50%)
+        &-prev
+            &::before
+                left: -32px
+                transform: rotate(180deg) translateY(50%)
+        &-next
+            padding-right: 32px
+            &::before
+                right: 0
+                

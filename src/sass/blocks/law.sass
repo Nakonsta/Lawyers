@@ -1,32 +1,63 @@
 .law
     .h1
         margin: 8px 0 24px
+        @media(max-width: 767px)
+            font-size: 28px
+            margin-bottom: 12px
     .question
         padding: 10px 25px 25px
         margin-bottom: 8px
+        @media(max-width: 575px)
+            padding: 10px 15px 20px
         &__top
             margin-bottom: 5px
+            @media(max-width: 767px)
+                align-items: flex-start
+                margin-bottom: 12px
             &-left
                 display: flex
                 align-items: center
+                @media(max-width: 767px)
+                    flex-wrap: wrap
         &__text
             height: auto
             min-height: 0
         &__date
             padding-right: 24px
             padding-top: 8px
+            @media(max-width: 767px)
+                order: 1
         &__lawyer
             padding-right: 24px
             padding-top: 8px
             &::before
                 top: 8px
+            @media(max-width: 767px)
+                width: 100%
+                order: 3
         &__answer
             padding-bottom: 5px
+            @media(max-width: 767px)
+                order: 2
+            @media(max-width: 575px)
+                color: $green 
+            &-text
+                @media(max-width: 575px)
+                    padding-left: 0
+            &-text::after,
+            &-text::before
+                @media(max-width: 575px)
+                    content: none
+        &__topic
+            @media(max-width: 767px)
+                padding-top: 8px
     &__popular
         display: flex
         flex-wrap: wrap
         align-items: center
         padding-bottom: 50px
+        @media(max-width: 575px)
+            padding-bottom: 32px
         &-item
             display: inline-block
             margin-bottom: 8px
@@ -34,6 +65,8 @@
             text-decoration: underline
             padding: 0 0 0 30px
             width: 50%
+            @media(max-width: 575px)
+                width: 100%
             &::after
                 content: ''
                 position: absolute
@@ -58,3 +91,5 @@
         &-title
             font-size: 36px
             margin-bottom: 20px
+            @media(max-width: 575px)
+                font-size: 24px

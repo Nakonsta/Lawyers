@@ -111,6 +111,23 @@
                     margin-bottom: 16px
                 @media (max-width: 575px)
                     width: 100%
+            .advantages__statistics-questions
+                position: relative
+                z-index: 3
+                &::before
+                    content: ''
+                    position: absolute
+                    background: url(../img/question.png) no-repeat 50% 50% / contain
+                    width: 95px
+                    height: 142px
+                    top: -15px
+                    left: 50%
+                    transform: translateX(-50%)
+                    z-index: -1
+                .advantages__statistics-subtitle,
+                .advantages__statistics-quantity,
+                .advantages__statistics-subtitle
+                    z-index: 4
     &__section
         padding: 45px 0 50px
         border-bottom: 1px solid #d5d5d5
