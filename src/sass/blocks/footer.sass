@@ -1,0 +1,109 @@
+.footer
+    padding-top: 40px
+    color: #6f6f6f
+    border-top: 1px solid #d5d5d5
+    &__soc
+        display: flex
+        justify-content: center
+        align-items: center
+        padding-bottom: 55px
+        @media(max-width: 575px)
+            flex-direction: column
+            padding-bottom: 24px
+        &-text
+            font-weight: 500
+            font-size: 24px
+            padding-right: 16px
+            color: $darkGray
+            @media(max-width: 575px)
+                padding-right: 0
+                padding-bottom: 12px
+                font-size: 18px
+        &-items
+            display: flex
+            align-items: center
+        &-item
+            width: 48px
+            height: 48px
+            border-radius: 50%
+            border: 2px solid $darkGray
+            position: relative
+            margin-right: 6px
+            &::before
+                content: ''
+                position: absolute
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: 50% 50%
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+            &--fb::before
+                width: 18px
+                height: 18px
+                background-image: url(../img/fb.png)
+            &--insta::before
+                width: 21px
+                height: 20px
+                background-image: url(../img/instagram.png)
+            &--vk::before
+                width: 20px
+                height: 13px
+                background-image: url(../img/vk.png)
+            &:last-child
+                margin-right: 0
+    &__about
+        @media(max-width: 575px)
+            text-align: center
+    &__logo
+        position: relative
+        padding-bottom: 16px
+        @media(max-width: 991px)
+            display: inline-block
+        &-title
+            font-weight: 600
+            font-size: 56px
+            color: #6f6f6f
+        &-subtitle
+            position: absolute
+            right: 45px
+            top: 8px
+            font-weight: 500
+            font-size: 16px
+            color: #6f6f6f
+            text-transform: uppercase
+            @media(max-width: 991px)
+                right: 0
+    &__text
+        @media(max-width: 991px)
+            padding-bottom: 24px
+    &__nav
+        &-block
+            @media(max-width: 575px)
+                text-align: center
+                padding-bottom: 16px
+            &--small
+                padding-bottom: 40px
+                @media(max-width: 575px)
+                    padding-bottom: 16px
+        &-title
+            text-transform: uppercase
+            font-weight: 700
+            padding-bottom: 24px
+            @media(max-width: 575px)
+                text-align: center
+                padding-bottom: 5px
+        &-item
+            padding-bottom: 5px
+            @media(max-width: 575px)
+                padding-bottom: 0
+        &-link
+            color: #6f6f6f
+            font-weight: 500
+            font-size: 16px
+    &__copyright
+        padding-top: 45px
+        text-align: center
+        @media(max-width: 767px)
+            padding-top: 16px
+        
