@@ -1,6 +1,7 @@
 .header
     background-color: $green
-    padding: 20px 0
+    @media (max-width: 1199px)
+        padding: 20px 0
     &__inner
         display: flex
         justify-content: space-between
@@ -10,23 +11,91 @@
             padding-bottom: 16px
             border-bottom: 1px solid rgba(255, 255, 255, 0.5)
     &__nav
+        display: flex
+        justify-content: space-around
         @media (max-width: 1199px)
             display: none
+        &-item
+            position: relative     
         &-link
+            white-space: nowrap
             display: inline-block
             color: #ffffff
             font-weight: 700
             margin: 0 8px
             text-transform: uppercase
             font-size: 16px
+            padding: 27px 0
+            border-bottom: 2px solid transparent
             &:hover, &:focus
-                color: $lightGray
+                color: #ffffff
+                border-bottom-color: #ffffff
         &--mobile
             display: none
             padding: 16px 0
             border-bottom: 1px solid rgba(255, 255, 255, 0.5)
             @media (max-width: 1199px)
                 display: block
+        .dropdown
+            display: flex
+            position: absolute
+            background-color: $green
+            padding: 0 16px
+            z-index: 10
+            flex-direction: column
+            align-items: flex-start
+            box-shadow: 5px 8px 20px 0 rgba(0,0,0,.25)
+            width: 320px
+            top: 80px
+            transform: scale(0)
+            transform-origin: 0 0 0
+            transition: all .2s ease-in
+            &__link
+                display: inline-block
+                padding-bottom: 4px
+                color: #ffffff
+                line-height: 1.2
+                padding: 8px
+                font-size: 16px
+                font-weight: 500
+                &:hover, &:focus
+                    color: #ffffff
+                    text-decoration: underline
+            &-mobile
+                display: none
+                padding-left: 16px
+                &__link
+                    color: #ffffff
+                    font-size: 16px
+                    font-weight: 500
+        &-item.has-subnav
+            &:hover .dropdown, &:focus .dropdown
+                transform: scale(1)
+        &-toggler
+            display: inline-block
+            position: absolute
+            top: 5px
+            right: 16px
+            width: 20px
+            height: 20px
+            &::before, &::after
+                content: ''
+                position: absolute
+                background-color: #ffffff
+            &::before
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                width: 2px
+                height: 100%
+            &::after
+                top: 50%
+                left: 0
+                transform: translateY(-50%)
+                height: 2px
+                width: 100%
+            &--open::before
+                content: none
     &__buttons
         white-space: nowrap
         @media (max-width: 1199px)
@@ -60,14 +129,20 @@
         min-height: 100vh
         z-index: 5
         padding: 40px 0
+        overflow: scroll
         &--open
             @media (max-width: 1199px)
                 display: block
         .header
             &__nav
+                &-item
+                    position: relative
+                    &--open .dropdown-mobile
+                        display: block
                 &-link
                     display: block
                     margin: 5px 0
+                    padding: 8px 0
         &__close
             position: absolute
             top: 24px

@@ -33,4 +33,18 @@ $('body').on('click', '.lk-lawyer__link', function(e) {
     e.preventDefault();
     $('.lk-lawyer__link').removeClass('lk-lawyer__link--active');
     $(this).addClass('lk-lawyer__link--active');
+});
+
+// Top menu dropdown
+
+$('body').on('click', '.header__nav-toggler', function() {
+    if ($(this).closest('.header__nav-item').hasClass('header__nav-item--open')) {
+        $('.header__nav-toggler').removeClass('header__nav-toggler--open');
+        $('.header__nav-toggler').closest('.header__nav-item').removeClass('header__nav-item--open'); 
+    } else {
+        $('.header__nav-toggler').removeClass('header__nav-toggler--open');
+        $(this).addClass('header__nav-toggler--open');
+        $('.header__nav-toggler').closest('.header__nav-item').removeClass('header__nav-item--open');
+        $(this).closest('.header__nav-item').addClass('header__nav-item--open');
+    }
 })
