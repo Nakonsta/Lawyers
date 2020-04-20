@@ -16,7 +16,7 @@
             width: 100%
             margin-right: 0
     &__right
-        width: 50%
+        width: calc(50% - 50px)
         margin-right: 5px
         @media (max-width: 767px)
             width: 100%
@@ -27,6 +27,7 @@
             text-decoration: underline
             line-height: 26px
             padding-right: 40px
+            display: inline-block
     &__top
         display: flex
         align-items: center
@@ -40,7 +41,6 @@
         font-weight: 500
         font-size: 22px
         padding-right: 10px
-        white-space: nowrap
         @media (max-width: 1199px)
             white-space: normal
     &__num
